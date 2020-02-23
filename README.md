@@ -37,6 +37,10 @@ Visit the project website for more
 * [Prepare your RaspberryPi](./1.%20Prepare%20your%20RaspberryPi)
 * [How to update the files](./2.%20How%20to%20update%20the%20files)
 
+# Extra
+
+* [Development environment](./Extra.%20Development%20environment)
+
 
 
 
