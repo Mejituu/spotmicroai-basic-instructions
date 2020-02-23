@@ -42,6 +42,7 @@ Remember the file spotmicro.py will be run as a service everytime the SpotMicro 
 ## Upload a file to the new folder
 
 Now you can drag and drop files from your computer to SpotMicroAI and the reverse conviniently.
+
 Try uploading a file and then deleting it to get familiarized with FileZilla Client.
 
 # SpotMicroAI

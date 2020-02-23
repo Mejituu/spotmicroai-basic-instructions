@@ -35,7 +35,7 @@ Visit the project website for more
 # Build
 
 * [Prepare your RaspberryPi](./1.%20Prepare%20your%20RaspberryPi)
-
+* [How to update the files](./2.%20How%20to%20update%20the%20files)
 
 
 
