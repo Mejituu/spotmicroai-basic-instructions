@@ -16,13 +16,13 @@ The concept is very simple, in a nutshell, before we boot the RaspberryPi with o
 
 This manual covers the installation of the operating system in the RaspberryPi, and letting it accesible wirelessly
 
-* RaspberryPi 3 or newer recommended
+* RaspberryPi Zero W or newer
 * RaspberryPi power supply
 * SD Card
 * Wifi connection (or Ethernet)
 * A computer like the one you are probably using to read this document
 
-Nothing else, nothing more. All set then, lets go!
+Lets start!
 
 # RaspberryPi operating system
 

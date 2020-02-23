@@ -34,7 +34,8 @@ Visit the project website for more
 
 # Build
 
-* [Prepare your RaspberryPi for SpotMicro](./1.%20Prepare%20your%20RaspberryPi))
+* [Prepare your RaspberryPi](./1.%20Prepare%20your%20RaspberryPi)
+
 
 
 
