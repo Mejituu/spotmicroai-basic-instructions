@@ -14,12 +14,14 @@ To continue, we are going to assume you have at least the following components o
 * 1 or 2 PCA9685
 * DC to DC 5v output step down voltage regulator (a stepdown/stepup converter will give you longer work time)
 * BEC 6v output (to feed the servos, if your servos can take your battery max voltage you don't need this component)
-* 7.4 or 11.1v batteries with enough Amps to feed the servos
+* 7.4 or 11.1v batteries with enough current to feed the servos
 * A rocker switch
 * 16x2 LCD Display Screen with I2C Module Interface Adapter
 * RaspberryPi Zero W with headers soldered
 * SD card
 * XBox one or PS4 remote controller
+
+Here you have how to wire up the components: https://gitlab.com/custom_robots/spotmicroai/electronics
 
 # SpotMicroAI Community
 
@@ -29,3 +31,22 @@ Visit the project website for more
 * Forum http://spotmicroai.org/
 * Repositories: https://gitlab.com/custom_robots/spotmicro
 * Some videos: https://www.youtube.com/watch?v=kHBcVlqpvZ8&list=PLp5v7U2tXHs3BYfe93GZwuUZLGsisapic&
+
+# Build
+
+* [Prepare your RaspberryPi for SpotMicro](./1.%20Prepare%20your%20RaspberryPi))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
