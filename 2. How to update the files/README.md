@@ -33,47 +33,18 @@ Double click in the folder **spotmicro** to see its contents, you can drag and d
 
 Remember the file spotmicro.py will be run as a service everytime the SpotMicro boots.
 
-# Update a file
+# Create a folder and update a file
 
-## Download the spotmicro.py file to your desktop:
+## Create the spotmicroai folder
 
-* In the left panel look for your Desktop folder, most likelly something like: C:\Users\USERNAME\Desktop\
-* Drag and drop the file **spotmicro.py** from the right panel to the left panel.
+* In the right panel, on the folder **/home/pi**, create the folder **spotmicroai**
 
-Edit it with a proper text editor like Sublime Text (https://www.sublimetext.com/3)
+## Upload a file to the new folder
 
-Change its contents to:
-
-```
-#!/home/pi/spotmicro/venv/bin/python3 -u
-
-import time
-
-
-while True:
-    print('SpotMicro is alive and updated!')
-    time.sleep(60)
-```
-
-## Upload the **spotmicro.py** file to your SpotMicro:
-
-* Drag and drop the file **spotmicro.py** from the left panel to the right panel.
-
-
-## Check than the change is running
-
-Open a terminal in SpotMicro and run the following command so you can see the updated logs appearing every 60 seconds:
-
-You can press Control+C to cancel the watch of the logs
-
-```
-ssh pi@192.168.1.XX
-tail -f /var/log/daemon.log
-```
+Now you can drag and drop files from your computer to SpotMicroAI and the reverse conviniently.
+Try uploading a file and then deleting it to get familiarized with FileZilla Client.
 
 # SpotMicroAI
 
 **You are all set!**
 
-Your SpotMicroAI has a soul and brain.
-We need to test all output and motion devices connected to the RaspberryPi (Screen, servos), also we need to receive signals from our Bluetooth XBox/PS4 controller
