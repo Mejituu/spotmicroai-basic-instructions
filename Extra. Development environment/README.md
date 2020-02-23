@@ -4,7 +4,11 @@ I decided to have a second RaspberryPi 4 4GB with an external SSD USB3 as a deve
 
 I've designed the case for it: https://www.thingiverse.com/thing:4105150
 
-![spotmicro-development](spotmicro-development.jpg)
+![spotmicroai-development](spotmicroai-development.jpg)
+
+And a workbench: https://www.thingiverse.com/thing:4139053
+
+![spotmicroai-workbench](spotmicroai-workbench.jpg)
 
 At the time of writing this, RaspberryPi 4 don't have support to boot from USB3, so you need to install the OS from a SD card and change the /boot partition or let PINN do it for you.
 
