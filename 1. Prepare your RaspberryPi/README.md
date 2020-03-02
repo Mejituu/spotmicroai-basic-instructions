@@ -8,9 +8,7 @@ RaspberryPi fundation has written a very nice manual here: https://www.raspberry
 
 But in this manual I'm going to do it a bit differently, I will drive you for an installation that don't need any screen, monitor and keyboard connected to your RaspberryPi to acomplish it. You just need a WIFI connection and or network cable connection.
 
-This kind of installation is called headless.
-
-The concept is very simple, in a nutshell, before we boot the RaspberryPi with our SD, the SD will have the network configuration (WIFI or nothing if you prefer to use network cable). Also will have the configuration needed to enable the services to access to it (VNC and SSH).
+This kind of installation is called **headless**. The concept is very simple, in a nutshell, before we boot the RaspberryPi with our SD, the SD will have the network configuration (WIFI or nothing if you prefer to use network cable). Also will have the configuration needed to enable the services to access to it (VNC and SSH) during the installation and after. So you don't need a keyboard, mouse or screen.
 
 # Hardware requirements
 
@@ -44,7 +42,6 @@ Download the .zip file that contains PINN from: http://sourceforge.net/projects/
 
 ![pinn-lite-zip-download](pinn-lite-zip-download.JPG)
 
-
 ## Step 2
 
 We need to format the SD card. Do this step even if the SD card is new.
@@ -59,7 +56,6 @@ In the RaspberryPi website, during the official installation guide, they recomme
 * Format the card (all defaults)
 
 ![sd-card-formatter](sd-card-formatter.JPG)
-
 
 ![sd-card-formatted](sd-card-formatted.JPG)
 
@@ -82,7 +78,7 @@ Is time to configure the PINN operating system to boot with VNC and SSH enabled,
 Doing this, we dont need mouse/keyboard/screen connected to our RaspberryPi, not even during the installation. But we can have them of course.
 
 * Open the SD card
-* Make sure in your OS you can see the file extensions
+* **Make sure in your OS you can see the file extensions**
 * Open the file **recovery.cmdline** with a proper text editor like Sublime Text or nano
 * Add the following 2 words to the line present in the file:
   * vncshare
@@ -90,9 +86,7 @@ Doing this, we dont need mouse/keyboard/screen connected to our RaspberryPi, not
 
 It will result in something like:
 
-```
-runinstaller quiet ramdisk_size=32768 root=/dev/ram0 init=/init vt.cur_default=1 elevator=deadline repo_list=http://raw.githubusercontent.com/procount/pinn-os/master/os/repo_list.json loglevel=2 sdhci.debug_quirks2=4 vncshare ssh
-```
+![unzip-pinns-in-sd-card](recovery-cmdline-vncshare-ssh.JPG)
 
 * Save the file
 
@@ -121,24 +115,14 @@ ctrl_interface=/var/run/wpa_supplicant
 
 network={
  scan_ssid=1
- ssid="YOUR_WIFI_SSID_NAME_HERE"
- psk="SUPER_SECRET_PASSWORD"
+ ssid="YOUR_WIFI_SSID"
+ psk="YOUR_WIFI_PASSWORD"
 }
 ```
 
 * Save the file
 
-## Step 7 - (Optional step) - Offline installation
-
-If your WIFI network don't have access to internet, you can also load the Raspbian Lite image in the SD card.
-
-* In your SD card, go to the "os" folder create a folder called "raspbian_lite"
-* From the official online repository (http://downloads.raspberrypi.org/raspbian_lite/), download all files to your "raspbian_lite" folder on the SD card (skip the folder archive and images).
-* There is a file called marketing.tar, uncompress it in the raspbian_lite folder of your SDcard, it will create a folder called slides_vga with a few images in
-
-This makes PINN not having to download it when selected.
-
-## Step 8
+## Step 7
 
 Lets boot the RaspberryPi
 
@@ -148,7 +132,7 @@ Lets boot the RaspberryPi
 
 # Network access
 
-Connecto to your Router and identify which IP has been assigned to your RaspberryPi.
+Connect to to your Router and identify which IP has been assigned to your RaspberryPi.
 
 For convenience you must add a IP Address reservation in your DCHP Server, so your RasberryPi IP will be always the same.
 
@@ -195,7 +179,7 @@ In order to see the PINN "virtual screen" that VNC provides, you need to install
 ![pinn](pinn.JPG)
 
 
-# PINN installing Headless RasbianLite
+# PINN installing Headless RaspbianLite
 
 * At the bottom of the screen select the language "English (US)" and the keyboard of your preference, for example Keyboard "us"
 
@@ -216,7 +200,7 @@ After clicking OK when the installation is done, you will lose VNC connectivity.
 * Close VNC
 
 
-# RasbianLite
+# RaspbianLite
 
 ## Step 1
 
@@ -244,12 +228,12 @@ You are logged in!
 Lets update the system, run the following commands:
 
 ```
-sudo apt-get update -y
-sudo apt-get upgrade -y
-sudo apt-get autoremove -y
+sudo apt update -y
+sudo apt dist-upgrade -y
+sudo apt autoremove -y
 ```
 
-While the update is happening, open a second terminal and monitor the temperature
+While the update is happening, open a second terminal, login in the Raspberry Pi and monitor the temperature
 
 ```
 ssh pi@192.168.1.XX
@@ -273,7 +257,9 @@ And from the options presented, do the following changes:
 
 * Change user password to "spotmicro"
 
-* Network options -> Hostname -> Change hostname to "spotmicro"
+* Update the tool (last option of the menu)
+
+* Network options -> Hostname -> Change hostname to "spotmicro" (or whatever you like)
 
 * Localization options
   * Change Locale, remove "en_GB.xxx" and select "en_US.UTF-8 UTF-8"
@@ -283,23 +269,12 @@ And from the options presented, do the following changes:
 
 * Select Finish and accept the reboot option
 
-Your terminal windows will lose connectivity.
+Your terminal windows will logout you during the reboot time.
 
-Reconnect to the SpotMicroAI, remember your password is now "spotmicro"
-
-```
-ssh pi@192.168.1.XX
-sudo raspi-config
-```
-
-And from the options presented, select:
-
-* Update
-
+Reconnect to the SpotMicroAI, **remember your password is now "spotmicro"**
 
 # SpotMicroAI
 
 **You are all set!**
 
 Now your SpotMicroAI has a soul.
-You need a program now to wake it up when it boots, we need a program that will start when we power it up.
