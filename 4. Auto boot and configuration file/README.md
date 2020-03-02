@@ -81,5 +81,10 @@ TODO: Missing a picture of the "rest position of the dog"
 * Activate your spot
 * Activate your remote controller
 * Press Start (XBOX controller) u Options (PS4 remote controller) to power up your servos
-* Pres the buttons!
+* Press the buttons!
 
+# How to debug a problem
+
+Look up in this page to see how to check the logs, if there are errors they are pretty self explanatory.
+
+Also you can ask us in Slack: https://spotmicroai-inviter.herokuapp.com/
