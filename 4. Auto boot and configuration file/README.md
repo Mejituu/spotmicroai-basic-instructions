@@ -17,6 +17,14 @@ cd ~/spotmicroai/systemd/
 
 Note you also have the "disable_spotmicroai_on_boot.sh" script to disable the auto-boot
 
+## AutoUpdate
+
+Check at the run script located at: https://gitlab.com/custom_robots/spotmicroai/basic-runtime/-/blob/master/run_spotmicroai.sh
+
+Notice SpotMicroAI will always update its sofware on every boot if wifi is available.
+
+This will not wipe out your configuration file, just the OS will have the latest updates.
+
 ## Check the logs
 
 You can check the logs with the daemon.log if you enabled autoboot or the log folder in spotmicroai
