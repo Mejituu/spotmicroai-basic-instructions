@@ -1,6 +1,6 @@
 # SpotMicroAI
 
-Hello, I'm Fran and i'm going to guide you in the steps needed for preparing your RaspberryPi to move your SpotMicro.
+Hello, I'm Fran and i'm going to guide you in the steps needed for preparing your RaspberryPi to move your SpotMicroAI.
 
 In order to have SpotMicroAI moving we need to prepare its operating system in a SD card.
 
@@ -208,7 +208,6 @@ After clicking OK when the installation is done, you will lose VNC connectivity.
 
 ```
 ssh pi@192.168.1.XX
-
 ```
 
 Now you wil be ask to add the ssh key to your key store, just say yes.
@@ -255,11 +254,11 @@ sudo raspi-config
 
 And from the options presented, do the following changes:
 
-* Change user password to "spotmicro"
+* Change user password to **"spotmicroai"**
 
 * Update the tool (last option of the menu)
 
-* Network options -> Hostname -> Change hostname to "spotmicro" (or whatever you like)
+* Network options -> Hostname -> Change hostname to "spotmicroai" (or whatever you like)
 
 * Localization options
   * Change Locale, remove "en_GB.xxx" and select "en_US.UTF-8 UTF-8"
@@ -271,7 +270,7 @@ And from the options presented, do the following changes:
 
 Your terminal windows will logout you during the reboot time.
 
-Reconnect to the SpotMicroAI, **remember your password is now "spotmicro"**
+Reconnect to the SpotMicroAI, **remember your password is now "spotmicroai"**
 
 # SpotMicroAI
 

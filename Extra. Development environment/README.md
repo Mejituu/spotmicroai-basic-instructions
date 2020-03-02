@@ -1,5 +1,9 @@
 # Development environment with RaspberryPi
 
+Hello, I'm Fran and i'm going to guide you in the steps needed to prepare a totally unnecesary development environment.
+
+This part of the tutorial is totally up to you, not needed at all for the SpotMicroAI build, just for development purposes.
+
 I decided to have a second RaspberryPi 4 4GB with an external SSD USB3 as a development environment.
 
 I've designed the case for it: https://www.thingiverse.com/thing:4105150
