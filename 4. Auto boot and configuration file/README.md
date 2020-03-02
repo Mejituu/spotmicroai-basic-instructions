@@ -39,7 +39,6 @@ tail -f ~/spotmicroai/logs/SpotMicroAI.log
 
 # Configuration file
 
-
 Is time for you to setup your mappings and i2c address. Edit the file **~/spotmicroai.json** to do so.
 
 You can use FileZilla and do it locally or nano editor.
@@ -57,4 +56,30 @@ For security, all your rest_angle values for the servos are set up at 90º in th
 ## TIP
 
 You can use "i2cdetect -y 1" tool to identify your i2c addresses
+
+
+
+# Calibration
+
+The calibration tool will help you to find the sweet spot, you can navigate there your config file and test each servo to get to the final calibration.
+
+```
+ssh pi@192.168.1.XX
+
+cd ~/spotmicroai/calibration
+
+./calibration.sh
+```
+
+![calibration-tool](calibration-tool.JPG)
+
+
+TODO: Missing a picture of the "rest position of the dog"
+
+# When you are ready!
+
+* Activate your spot
+* Activate your remote controller
+* Press Start (XBOX controller) u Options (PS4 remote controller) to power up your servos
+* Pres the buttons!
 

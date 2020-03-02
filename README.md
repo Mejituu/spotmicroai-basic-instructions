@@ -11,7 +11,7 @@ Before you jump to advanced simulations you can use a simple RaspberryPi for you
 To continue, we are going to assume you have at least the following components or very similar ones.
 
 * 12 Servos MG996R 180º
-* 1 or 2 PCA9685
+* 1 or 2 PCA9685 (this is configurable in the **~/spotmicroai.json** config file)
 * DC to DC 5v output step down voltage regulator (a stepdown/stepup converter will give you longer work time)
 * BEC 6v output (to feed the servos, if your servos can take your battery max voltage you don't need this component)
 * 7.4 or 11.1v batteries with enough current to feed the servos
