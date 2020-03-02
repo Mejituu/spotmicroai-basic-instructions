@@ -78,7 +78,7 @@ After a few seconds, the light bar will strobe rapidly and brightly.
 
 The controller is now in pairing mode.
 
-![xbox-one-controller-sharing](xbox-one-controller-sharing.jpg)
+![xbox-one-controller-sharing](ps4-controller-bluetooth-paring.jpg)
 
 ## Pair the controller with the Raspberry Pi
 
