@@ -88,3 +88,5 @@ TODO: Missing a picture of the "rest position of the dog"
 Look up in this page to see how to check the logs, if there are errors they are pretty self explanatory.
 
 Also you can ask us in Slack: https://spotmicroai-inviter.herokuapp.com/
+
+If you like to test components individually check the folder **~/spotmicroai/integration_tests** for scripts to check the PCA9685 boards, the LCD screen, the GPIO...
