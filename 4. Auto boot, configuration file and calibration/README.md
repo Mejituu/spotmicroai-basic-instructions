@@ -61,6 +61,8 @@ You can use "i2cdetect -y 1" tool to identify your i2c addresses
 
 # Calibration
 
+![spotmicroai_compass.jpg](spotmicroai_compass.jpg)
+
 The calibration tool will help you to find the sweet spot, you can navigate there your config file and test each servo to get to the final calibration.
 
 ```
@@ -76,11 +78,10 @@ cd ~/spotmicroai/calibration
 ## What is rest position?
 
 ![spotmicroai_rest_angle_shoulder_and_leg.jpg](spotmicroai_rest_angle_shoulder_and_leg.jpg)
+
 ![spotmicroai_rest_angle_leg_and_feet.jpg](spotmicroai_rest_angle_leg_and_feet.jpg)
-![spotmicroai_compass.jpg](spotmicroai_compass.jpg)
 
-
-# When you are ready!
+# When you have done the calibration
 
 * Activate your spot
 * Activate your remote controller
