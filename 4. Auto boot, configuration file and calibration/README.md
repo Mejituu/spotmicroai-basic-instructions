@@ -4,19 +4,6 @@ Hello, I'm Fran and i'm going to guide you in the steps needed to make your Spot
 
 We will cover too the configuration file that belongs to your SpotMicroAI, the place where you map the I2C address and your servos.
 
-# Run the software automatically on boot
-
-Just enable it using the following script:
-
-```
-ssh pi@192.168.1.XX
-
-cd ~/spotmicroai/systemd/
-./enable_spotmicroai_on_boot.sh
-```
-
-Note you also have the "disable_spotmicroai_on_boot.sh" script to disable the auto-boot
-
 ## AutoUpdate
 
 Check at the run script located at: https://gitlab.com/custom_robots/spotmicroai/basic-runtime/-/blob/master/run_spotmicroai.sh
@@ -24,18 +11,6 @@ Check at the run script located at: https://gitlab.com/custom_robots/spotmicroai
 Notice SpotMicroAI will always update its sofware on every boot if wifi is available.
 
 This will not wipe out your configuration file, just the OS will have the latest updates.
-
-## Check the logs
-
-You can check the logs with the daemon.log if you enabled autoboot or the log folder in spotmicroai
-
-```
-tail -f /var/log/daemon.log
-```
-or
-```
-tail -f ~/spotmicroai/logs/SpotMicroAI.log
-```
 
 # Configuration file
 
@@ -58,8 +33,11 @@ For security, all your rest_angle values for the servos are set up at 90º in th
 You can use "i2cdetect -y 1" tool to identify your i2c addresses
 
 
-
 # Calibration
+
+* To calibrate SpotMicroAI you may have the main software not running and reboot, so the GPIO configuration will reset.
+
+* Alternativelly you can just unplug the GPIO17 cable and reboot.
 
 ![spotmicroai_compass.jpg](spotmicroai_compass.jpg)
 
@@ -87,6 +65,31 @@ cd ~/spotmicroai/calibration
 * Activate your remote controller
 * Press Start (XBOX controller) u Options (PS4 remote controller) to power up your servos
 * Press the buttons!
+
+# Run the software automatically on boot
+
+Just enable it using the following script:
+
+```
+ssh pi@192.168.1.XX
+
+cd ~/spotmicroai/systemd/
+./enable_spotmicroai_on_boot.sh
+```
+
+Note you also have the "disable_spotmicroai_on_boot.sh" script to disable the auto-boot
+
+## Check the logs
+
+You can check the logs with the daemon.log if you enabled autoboot or the log folder in spotmicroai
+
+```
+tail -f /var/log/daemon.log
+```
+or
+```
+tail -f ~/spotmicroai/logs/SpotMicroAI.log
+```
 
 # How to debug a problem
 
