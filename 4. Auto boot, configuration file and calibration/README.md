@@ -73,8 +73,12 @@ cd ~/spotmicroai/calibration
 
 ![calibration-tool](calibration-tool.JPG)
 
+## What is rest position?
 
-TODO: Missing a picture of the "rest position of the dog"
+![spotmicroai_rest_angle_shoulder_and_leg.jpg](spotmicroai_rest_angle_shoulder_and_leg.jpg)
+![spotmicroai_rest_angle_leg_and_feet.jpg](spotmicroai_rest_angle_leg_and_feet.jpg)
+![spotmicroai_compass.jpg](spotmicroai_compass.jpg)
+
 
 # When you are ready!
 
