@@ -141,5 +141,6 @@ sudo jstest /dev/input/js0
 
 ![ps4-controller-capture-keys](ps4-controller-capture-keys.JPG)
 
-Done! 
+Done!
+
 
