@@ -43,7 +43,7 @@ This will show when you press start/options button in your controller
 
 ### Motion controller
 
-![pca8695_boards_icons](pca8695_boards_icons.jpeg)
+![pca8695_boards_icons](pca8695_boards_icons.jpg)
 
 2 icons, each one represents 1 PCA9685, some people use 2 boards, others use only 1
 
