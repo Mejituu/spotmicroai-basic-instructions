@@ -9,36 +9,50 @@ Hello, I'm Fran and i'm going to explain what the screen is saying when you boot
 
 ## Icons and text
 
-* SpotMicro = is just a text
+### SpotMicro
 
-* Temperature = The Raspberry Pi CPU temperature, beyond 50º you need to use a heat sink. RaspberryPi 4 runs very hot by default
+Is just a text
 
+### Temperature
+
+The Raspberry Pi CPU temperature, beyond 50º you need to use a heat sink. RaspberryPi 4 runs very hot by default
+
+### Remote controller
 ![remote_controller_icon.jpg](remote_controller_icon.jpg)
-* First icon = Remote controller
- * OK
+
+* OK
 ![ok_icon](ok_icon.jpg)
- * NO OK
+* NO OK
 ![]()
- * SEARCHING
+* SEARCHING
 ![]()
+
+### Abort controller (GPIO17 to 0E)
 
 ![abort_controller](abort_controller.jpg)
-* Abort controller (GPIO17 to 0E) = cuts the power to the servos
- * OK
+
+Cuts the power to the servos
+
+* OK
 ![ok_icon](ok_icon.jpg)
- * NO OK
+* NO OK
 ![]()
- * ACTIVE
+* ACTIVE
 ![active_icon.jpg](active_icon.jpg)
+This will show when you press start/options button in your controller
+
+### Motion controller
 
 ![pca8695_boards_icons](pca8695_boards_icons.jpeg)
-* Motion controller = 2 icons, each one represents 1 PCA9685, some people use 2 boards, others use only 1
- * OK
+
+2 icons, each one represents 1 PCA9685, some people use 2 boards, others use only 1
+
+* OK
 ![ok_icon](ok_icon.jpg)
- * NOK
+* NOK
 ![]()
- * NOT PRESENT
-![]()
+* NOT PRESENT
+![empty_icon](empty_icon.jpg)
 
 
 
