@@ -15,7 +15,7 @@ Is just a text
 
 ### Temperature
 
-The Raspberry Pi CPU temperature, beyond 50º you need to use a heat sink. RaspberryPi 4 runs very hot by default
+The Raspberry Pi CPU temperature, beyond 50 degree you need to use a heat sink. RaspberryPi 4 runs very hot by default
 
 ### Remote controller
 ![remote_controller_icon.jpg](remote_controller_icon.jpg)
@@ -53,6 +53,7 @@ This will show when you press start/options button in your controller
 ![]()
 * NOT PRESENT
 ![empty_icon](empty_icon.jpg)
+Some users may use only 1 PCA9685, so one of the boards will be without status icon
 
 
 
