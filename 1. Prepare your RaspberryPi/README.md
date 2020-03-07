@@ -10,6 +10,10 @@ But in this manual I'm going to do it a bit differently, I will drive you for an
 
 This kind of installation is called **headless**. The concept is very simple, in a nutshell, before we boot the RaspberryPi with our SD, the SD will have the network configuration (WIFI or nothing if you prefer to use network cable). Also will have the configuration needed to enable the services to access to it (VNC and SSH) during the installation and after. So you don't need a keyboard, mouse or screen.
 
+# Video
+
+There is a video to help in this steps: https://youtu.be/mpcXCNx0u74
+
 # Hardware requirements
 
 This manual covers the installation of the operating system in the RaspberryPi, and letting it accesible wirelessly

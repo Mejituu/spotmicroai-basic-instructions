@@ -4,6 +4,10 @@ Hello, I'm Fran and i'm going to guide you in the steps needed to install your S
 
 You need to have the electronic parts wired to finish successfully this manual. Check the [Electronics repository](https://gitlab.com/custom_robots/spotmicroai/electronics) repository if you are not ready yet.
 
+# Video
+
+There is a video to help in this steps: https://youtu.be/nBVdTmTjuQI
+
 # Install the software from the repository
 
 Installation has been automated for simplicity, open a terminal and run the following commands:
