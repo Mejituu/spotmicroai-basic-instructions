@@ -57,9 +57,19 @@ cd ~/spotmicroai/calibration
 
 ## What is rest position?
 
+The pictures have 2 numbers, because depending the parts you print and the side of the SpotMicroAI you will have to use them acordingly.
+
+Shoulders must be squared as in the following picture at 90º
+
 ![spotmicroai_rest_angle_shoulder_and_leg.jpg](spotmicroai_rest_angle_shoulder_and_leg.jpg)
 
 ![spotmicroai_rest_angle_leg_and_feet.jpg](spotmicroai_rest_angle_leg_and_feet.jpg)
+
+But the leg, how does it look when is at 90º position?
+
+The answer is: the same in all sides. Next picture for reference.
+
+![leg_90](leg_90.jpg)
 
 # When you have done the calibration
 
