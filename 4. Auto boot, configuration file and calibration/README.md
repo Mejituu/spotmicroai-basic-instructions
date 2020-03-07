@@ -26,7 +26,9 @@ nano ~/spotmicroai.json
 
 The default config file will be generated from the source: https://gitlab.com/custom_robots/spotmicroai/basic-runtime/-/blob/master/spotmicroai.default, which assume you have 2 PCA9685 boards, 1 LCD 16x2 I2C screen and the GPIO 17 port mapped to the 0E port in the PCA9685 boards as explained in the Electronics repository at https://gitlab.com/custom_robots/spotmicroai/electronics
 
-For security, all your rest_angle values for the servos are set up at 90º in the default configuration
+For safetyness, all your rest_angle values for the servos are set up at 90 degree in the default configuration
+
+You can validate your json with the following page https://jsonlint.com/
 
 ## TIP
 
