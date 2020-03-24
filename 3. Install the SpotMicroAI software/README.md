@@ -15,8 +15,6 @@ Installation has been automated for simplicity, open a terminal and run the foll
 ssh pi@192.168.1.XX
 
 curl https://gitlab.com/custom_robots/spotmicroai/basic-runtime/-/raw/master/utilities/self_install.sh | bash
-cd ~/spotmicroai
-git checkout ba031e5fad88fbcd751b23df0d87d6e76496068c
 ```
 
 # Enable I2C
